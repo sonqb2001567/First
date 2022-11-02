@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T04:38:55.975Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="UCammkk8GzMdtB8OwRHh" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-02T05:04:13.238Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ylKO8HPeLLlJAiG7faqH" version="20.5.1" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="914" dy="1565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1085" dy="1653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="w634_Kkc9kHz6LeSrULX-25" value="Order" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" parent="1" vertex="1">
+        <mxCell id="w634_Kkc9kHz6LeSrULX-25" value="Order (entity)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="420" y="20" width="140" height="270" as="geometry">
             <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -298,6 +298,110 @@
             <mxPoint x="152" y="650" as="sourcePoint" />
             <mxPoint x="160" y="590" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-46" value="LoginPage (Boundary)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="60" y="820" width="140" height="120" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-54" value="+InputUsername()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-46">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-55" value="+InputPassword()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-46">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-56" value="+Login()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-46">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-57" value="Login Manager (control)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="340" y="820" width="140" height="100" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-58" value="+SentLoginInfor()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-57">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-59" value="&amp;nbsp;+SentLoginResult()" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-57">
+          <mxGeometry y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-60" value="CustomerData (entity)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="620" y="820" width="140" height="70" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-64" value="OwnerData (entity)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="620" y="920" width="140" height="70" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-65" value="AdminData (entity)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1040" width="140" height="70" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-66" value="OrderManager (control)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="340" y="950" width="140" height="100" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-67" value="+SentLoginInfor()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-66">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-68" value="&amp;nbsp;+SentLoginResult()" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-66">
+          <mxGeometry y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-69" value="ServiceManager (control)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1090" width="140" height="100" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-70" value="+SentLoginInfor()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-69">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-71" value="&amp;nbsp;+SentLoginResult()" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-69">
+          <mxGeometry y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-72" value="HomePage (Boundary)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="60" y="990" width="140" height="120" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-73" value="+InputUsername()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-72">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-74" value="+InputPassword()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-72">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-75" value="+Login()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-72">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-77" value="CustomerProfile&#xa; (Boundary)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1150" width="140" height="120" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-78" value="+InputUsername()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-77">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-79" value="+InputPassword()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-77">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-80" value="+Login()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-77">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-81" value="PersonalProfile&#xa; (Boundary)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1310" width="140" height="120" as="geometry">
+            <mxRectangle x="690" y="20" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-82" value="+InputUsername()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-81">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-83" value="+InputPassword()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-81">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk2Rdvp4Htun1exUSVnZ-84" value="+Login()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Nk2Rdvp4Htun1exUSVnZ-81">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
